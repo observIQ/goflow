@@ -1,4 +1,4 @@
-module github.com/cloudflare/goflow/v3
+module github.com/observiq/goflow/v3
 
 go 1.12
 

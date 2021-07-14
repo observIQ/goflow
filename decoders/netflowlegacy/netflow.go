@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/cloudflare/goflow/v3/decoders/utils"
+	"github.com/observiq/goflow/v3/decoders/utils"
 )
 
 type ErrorVersion struct {

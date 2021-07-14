@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net"
 
-	"github.com/cloudflare/goflow/v3/decoders/sflow"
-	flowmessage "github.com/cloudflare/goflow/v3/pb"
+	"github.com/observiq/goflow/v3/decoders/sflow"
+	flowmessage "github.com/observiq/goflow/v3/pb"
 )
 
 func GetSFlowFlowSamples(packet *sflow.Packet) []interface{} {

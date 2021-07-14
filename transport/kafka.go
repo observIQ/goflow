@@ -11,9 +11,9 @@ import (
 	"strings"
 
 	sarama "github.com/Shopify/sarama"
-	flowmessage "github.com/cloudflare/goflow/v3/pb"
-	"github.com/cloudflare/goflow/v3/utils"
 	proto "github.com/golang/protobuf/proto"
+	flowmessage "github.com/observiq/goflow/v3/pb"
+	"github.com/observiq/goflow/v3/utils"
 )
 
 var (

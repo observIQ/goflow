@@ -7,8 +7,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/cloudflare/goflow/v3/transport"
-	"github.com/cloudflare/goflow/v3/utils"
+	"github.com/observiq/goflow/v3/transport"
+	"github.com/observiq/goflow/v3/utils"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	log "github.com/sirupsen/logrus"
 )
