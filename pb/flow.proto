@@ -1,8 +1,7 @@
 syntax = "proto3";
 package flowprotob;
 
-option java_package = "com.cloudflare.net.flowagg";
-option java_outer_classname = "FlowMessagePb";
+option go_package = "github.com/observiq/goflow/v3/pb";
 
 message FlowMessage {
 
@@ -19,6 +18,7 @@ message FlowMessage {
   uint32 SequenceNum = 4;
   uint64 SamplingRate = 3;
 
+  bool   HasFlowDirection = 1000;
   uint32 FlowDirection = 42;
 
   // Sampler information
@@ -75,6 +75,7 @@ message FlowMessage {
   // Fragments (IPv4/IPv6)
   uint32 FragmentId = 35;
   uint32 FragmentOffset = 36;
+  bool HasBiFlowDirection = 1001;
   uint32 BiFlowDirection = 41;
 
   // Autonomous system information

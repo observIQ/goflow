@@ -282,9 +282,15 @@ func ConvertNetFlowDataSet(version uint16, baseTime uint32, uptime uint32, recor
 			DecodeUNumber(v, &(flowMessage.IPv6FlowLabel))
 
 		case netflow.IPFIX_FIELD_biflowDirection:
+			if len(v) > 0 {
+				flowMessage.HasBiFlowDirection = true
+			}
 			DecodeUNumber(v, &(flowMessage.BiFlowDirection))
 
 		case netflow.NFV9_FIELD_DIRECTION:
+			if len(v) > 0 {
+				flowMessage.HasFlowDirection = true
+			}
 			DecodeUNumber(v, &(flowMessage.FlowDirection))
 
 		default:
