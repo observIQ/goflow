@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"time"
 
-	"github.com/cloudflare/goflow/v3/decoders/netflowlegacy"
-	flowmessage "github.com/cloudflare/goflow/v3/pb"
-	"github.com/cloudflare/goflow/v3/producer"
+	"github.com/observiq/goflow/v3/decoders/netflowlegacy"
+	flowmessage "github.com/observiq/goflow/v3/pb"
+	"github.com/observiq/goflow/v3/producer"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

@@ -3,7 +3,7 @@ package transport
 import (
 	"testing"
 
-	flowmessage "github.com/cloudflare/goflow/v3/pb"
+	flowmessage "github.com/observiq/goflow/v3/pb"
 	"github.com/stretchr/testify/assert"
 )
 
